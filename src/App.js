@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import ThemeContextProvider from './Context/ThemeContext';
+import Header from './Header/Header';
+import Presentation from './Presentation/Presentation';
+import Competences from './Competences/Competences';
+import Projects from './Projects/Projects';
+import Contact from './Contacts/Contact';
+import NotFound from './NotFound/NotFound';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './NavBar/NavBar';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeContextProvider>
+      <NavBar />  
+      <Routes>
+          <Route path="/" element={<Header />} />
+          <Route path="/presentation" element={<Presentation />} />
+          <Route path="/competences" element={<Competences />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </ThemeContextProvider>
     </div>
   );
 }
