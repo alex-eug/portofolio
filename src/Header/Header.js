@@ -19,14 +19,14 @@ const titleRef = useRef()
     useEffect(() => {
         gsap.fromTo(titleRef.current, { 'textShadow': '-5px -200px 9px #f1ff11' }, { 'textShadow': '-5px -2px 7px #f1ff11', duration: 2 });
         
-        gsap.fromTo(titleRef.current, { 'top': '0px', fontSize: '1rem' }, { 'top': '200px', fontSize: '6.5rem', duration: 1.5 });
+        gsap.fromTo(titleRef.current, { 'top': '0px', fontSize: '1rem',opacity:0 }, {'top': '200px', fontSize: '6.5rem',opacity:1, duration: 4.5 });
 
        
 
-        gsap.fromTo(alexFoto.current, { 'left': '1000px',opacity:0 }, { 'left': '0px',opacity:.7 ,duration: 1.5, delay: 1 });
+        gsap.fromTo(alexFoto.current, { 'right': '1000px',opacity:0 }, {  borderRadius: '50%', 'right': '0px',opacity:.8 ,duration: 1.5, delay: 1 });
         gsap.to(alexFoto.current, { rotation: "+=360", duration: 1.5, delay: 1 });
 
-        gsap.fromTo(chubiFoto.current, { 'right': '1000px',opacity:0  }, { 'right': '0px', opacity:.8,duration: 1.5, delay: 1 });
+        gsap.fromTo(chubiFoto.current, { 'left': '1000px',opacity:0  }, { borderRadius: '50%',  'left': '0px', opacity:.8,duration: 1.5, delay: 1 });
         gsap.to(chubiFoto.current, { rotation: "-=360", duration: 1.5, delay: 1 });
 
         gsap.fromTo(headerPara.current, { fontSize: 0 }, { fontSize: '1.5rem', duration: 1.5, delay: 1.5 });
@@ -59,18 +59,18 @@ const titleRef = useRef()
 
 
             <div className={theme ? 'img-profil-container' : 'hidden'}>
-                <img
-                    ref={alexFoto}
-                    className="foto"
-                    src={Alex}
-                    alt="foto profil"
-                />
-                <img
-                    ref={chubiFoto}
-                    className="foto"
-                    src={Chuba}
-                    alt="foto profil"
-                />
+            <img
+            ref={chubiFoto}
+            className="foto"
+            src={Chuba}
+            alt="foto profil"
+            />
+            <img
+                ref={alexFoto}
+                className="foto"
+                src={Alex}
+                alt="foto profil"
+            />
             </div>
             <div className={theme ? 'hidden' : 'img-profil-container'}>
                 <img
@@ -80,7 +80,7 @@ const titleRef = useRef()
                 />
             </div>
 
-            <p className={theme ? "hidden" : "header-para"}>Je suis ton père</p>
+            <p className={theme ? "hidden" : "header-para father"}>Je suis ton père</p>
             <p ref={headerPara} className={theme ? "header-para" : "hidden"}>Je suis à droite à gauche c'est chubi</p>
 
             </div>
