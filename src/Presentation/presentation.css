@@ -73,3 +73,17 @@
     text-align: justify;
     color: #F1E61E;
   }
+
+  @media screen and (max-width:500px) {
+    .crawl {
+      padding: 0 10px 0 10px;
+      font-size: 200%;
+      bottom: 0;
+      height: 80rem;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%) perspective(600px) rotateX(28deg);
+      transform-origin: 50% 100%;
+      width: 90%;
+    }
+  }

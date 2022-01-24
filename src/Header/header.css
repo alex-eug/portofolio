@@ -11,12 +11,7 @@
 /* .header-nav{
     background: rgba(0, 0, 0, 0);
 } */
-.nav-list {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    color: aliceblue;
-}
+
 
 .dark-mode {
     position: absolute;
@@ -51,12 +46,7 @@
    position: absolute;
 } */
 
-.list-item .link-item {
-    list-style-type: none;
-    padding: 5px;
-    color: aliceblue;
-    text-decoration: none;
-}
+
 
 .header-title {
     width: 1000px;
@@ -125,12 +115,12 @@
    
 
     
-    .dark-mode {
-        /* top: 10%;
+    /* .dark-mode {
+        top: 10%;
         left: 40%;
-        transform: translate(-50% -50%); */
+        transform: translate(-50% -50%);
     }
 
     .light-mode {
-    }
+    } */
 }

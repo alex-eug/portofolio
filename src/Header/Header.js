@@ -4,7 +4,7 @@ import lightSky from './Spaceship.mp4'
 import darkSky from './deathStar.mp4'
 import Alex from './alexpp.jpg'
 import Chuba from './chuba.jpeg'
-import Vador from './vador.jpg'
+ import Vador from './vador.jpg'
 import { ThemeContext } from '../Context/ThemeContext';
 import { gsap } from "gsap";
 
