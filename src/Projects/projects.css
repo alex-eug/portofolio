@@ -1,0 +1,127 @@
+.projects-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(246,60,60);
+    background: linear-gradient(63deg, rgba(246,60,60,1) 0%, rgba(35, 35, 37, 0.973) 50%, rgba(42,98,205,1) 100%);
+}
+.black-page{
+   position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 1000;
+    animation:blackPage 7s 1s  forwards
+}
+.new-page{
+   position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 1002;
+   background:url(../Header/vador.jpg);
+}
+
+@keyframes blackPage{
+    from{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to{
+        background-color: rgb(0, 0, 0);
+    }
+}
+.card-plate{
+    width: 70vw;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.425);
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.square{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);;
+        height: 400px;
+        width: 400px;
+        background: linear-gradient(45deg,rgba(42,98,205,1) 0%, rgba(35,35,37,0.8018557764902836) 50%,  rgba(246,60,60,1) 100%);
+            transform-origin: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: turquoise;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    height: 300px;
+    width: 200px;
+    box-shadow: 2px 2px 1px rgb(156, 156, 156), 3px 3px 1px black, 4px 4px 1px rgb(156, 156, 156), 5px 5px 1px black, 6px 6px 1px rgb(156, 156, 156), 7px 7px 1px black, 8px 8px 1px rgb(156, 156, 156), 9px 9px 1px black, 10px 10px 1px rgb(156, 156, 156);
+    border-radius: 15px;
+}
+
+.card-on{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%,-50%); 
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+    box-shadow: 1px 1px 1px rgb(156, 156, 156);
+    animation: turnPages 3s 4s ease-in-out forwards;
+}
+.card-on2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%,-50%); 
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+    box-shadow: 1px 1px 1px rgb(156, 156, 156);
+    animation: turnPages2 3s 1s ease-in-out forwards;
+}
+
+.vador-project{
+    width: 70%;
+    margin-top: 25%;
+}
+
+@keyframes turnPages {
+    from{
+
+        position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%,-50%);
+    }to{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+         transform: translate(-50%,-50%);
+    }
+}
+@keyframes turnPages2 {
+    from{
+
+        position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%,-50%);
+    }to{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+         transform: translate(-50%,-50%);
+    }
+}

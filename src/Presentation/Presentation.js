@@ -17,7 +17,7 @@ export default function Presentation() {
     .set(title.current, { opacity: 1, scale: 2.75 })
     .to(title.current, { scale: 0.05, ease: "power2", duration: 6 })
     .to(title.current, { opacity: 0, duration: 1.5 }, "-=1.5")
-    .to(content.current, { top: "-170%", duration: 100 });
+    .to(content.current, { top: "-170%", duration: 150 }, "-=2.5");
 }, []);
 
 

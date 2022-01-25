@@ -41,7 +41,9 @@
 
 @media screen and (max-width:500px){
     .nav-list{
-
+        position: absolute;
+        align-items: center;
+        justify-content: center;
        flex-direction: column;
        height: 205px;
        margin-top:20px ;
@@ -59,6 +61,7 @@
     }
     .btn-toggle{
         display: block;
+        z-index: 10001;
     }
 }
 

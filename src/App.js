@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <ThemeContextProvider>
-      <NavBar />  
+      <NavBar />
       <Routes>
           <Route path="/" element={<Header />} />
           <Route path="/presentation" element={<Presentation />} />

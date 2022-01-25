@@ -1,0 +1,147 @@
+.competence-container {
+    background: #dfe5e7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./tableauDeBord.png) 30% no-repeat;
+    background-size: cover;
+}
+
+.competence-img {
+    height: 200px;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+}
+
+.skill .skill-name {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.skill .skill-name span:nth-child(2n) {
+    color: #f63c3c;
+}
+.skill .skill-name span:nth-child(2n + 1) {
+    color: #2A62CD;
+}
+
+.skill .skill-name span {
+    margin: 10px 0;
+
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid #ebecf0;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.skill .skill-name span:hover {
+    background: linear-gradient(0.9turn, #b1afaf, #95d1d1, #c4c5c5);
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+}
+
+.bar {
+    width: 400px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: inset 5px 5px 2px #d9dade, inset -5px -5px 2px #d9dade;
+}
+
+.bar .progress {
+    background: linear-gradient(0.9turn, #f63c3c, #3d4949, #2A62CD);
+    box-shadow: 1px 1px 50px #80a5cf;
+    border-radius: 50px;
+    height: 100%;
+    height: 20px;
+    top: 5px;
+    position: relative;
+    right: -6px;
+}
+.bar:nth-child(1) .progress {
+    animation: 2s progress80;
+    width: 80%;
+}
+.bar:nth-child(2) .progress {
+    animation: 2s progress80;
+    width: 80%;
+}
+.bar:nth-child(3) .progress {
+    animation: 2s progress60;
+    width: 60%;
+}
+.bar:nth-child(4) .progress {
+    animation: 2s progress70;
+    width: 70%;
+}
+.bar:nth-child(5) .progress {
+    animation: 2s progress60;
+    width: 60%;
+}
+.bar:nth-child(6) .progress {
+    animation: 2s progress50;
+    width: 50%;
+}
+.bar:nth-child(7) .progress {
+    width: 60%;
+    animation: 2s progress60;
+}
+@keyframes progress50 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes progress60 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+@keyframes progress70 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+@keyframes progress80 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bar {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bar {
+        width: 200px;
+    }
+}

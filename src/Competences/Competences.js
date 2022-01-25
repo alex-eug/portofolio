@@ -1,10 +1,32 @@
 import React from 'react';
+import './competences.css'
 
 export default function Competences() {
-  return( 
-      <div>
-        <h1>competences</h1>
-      </div>
-    )
+  return (
+    
+    <div className='competence-container'>
+    <div className="skill">
+    <div className="skill-name">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>REACT</span>
+    <span>JavaScript</span>
+    <span>Node.js</span>
+    <span>SQL</span>
+    <span>SCRUM</span>
+    </div>
+    <div className="bar-container">
+    <div className="bar"><div className="progress"></div></div>
+    <div className="bar"><div className="progress"></div></div>
+    <div className="bar"><div className="progress"></div></div>
+    <div className="bar"><div className="progress"></div></div>
+    <div className="bar"><div className="progress"></div></div>
+    <div className="bar"><div className="progress"></div></div>
+    <div className="bar"><div className="progress"></div></div>
+    </div>
+    </div>
+    </div>
+    
+  )
 
 }
