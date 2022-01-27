@@ -9,15 +9,15 @@
 .nav-list {
     list-style-type: none;
     /* background: rgb(0, 0, 0); */
-    height:100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.list-item .link-item{
-    margin-right:10px ;
+.list-item .link-item {
+    margin-right: 10px;
     color: rgb(222, 226, 169);
     cursor: pointer;
     text-decoration: none;
@@ -25,9 +25,9 @@
     font-weight: 700;
 }
 
-.list-item{
-    margin:10px;
-    padding-top: 25px;
+.list-item {
+    margin: 10px;
+    padding-top: 35px;
 }
 .nav-list a::after {
     content: "";
@@ -36,60 +36,55 @@
     width: 0%;
     height: 2px;
     background: #f8e802;
-    box-shadow:-2px -2px 10px rgb(255, 255, 250) ,2px 2px 10px rgb(255, 255, 250) ,1px 1px 10px rgb(255, 251, 19);
+    box-shadow: -2px -2px 10px rgb(255, 255, 250), 2px 2px 10px rgb(255, 255, 250), 1px 1px 10px rgb(255, 251, 19);
     transition: width 0.2s ease-in-out;
 }
 .nav-list a:hover::after {
     width: 100%;
 }
 
-
-.btn-toggle{
-  
-   position: absolute;
-   right: 50px;
-   top: 1px;
-   padding: 5px;
-   cursor: pointer;
-   display: none;
-   z-index: 500;
+.btn-toggle {
+    position: absolute;
+    right: 50px;
+    top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 500;
 }
-.img-laser{
+.img-laser {
     height: 40px;
-   transform:  rotate( 90deg);
-  background: black;
+    transform: rotate(90deg);
+    background: black;
 }
 
-@media screen and (max-width:500px){
-    
-    .btn-toggle{
+@media screen and (max-width: 500px) {
+    .btn-toggle {
         display: block;
         z-index: 10001;
     }
-
-   
-    .nav-list{
-        flex-direction: column;
-      background: black;
-      position: absolute;
-      align-items: center;
-      justify-content: center;
-      height: 260px;
-      width: 100%;
-      margin-top: 20px;
-      
+    .header-nav{
+        background: black;
     }
-    .list-item{
-        height: 10px;
+    .nav-list {
+        flex-direction: column;
+        background: rgb(245,245,179);
+background: radial-gradient(circle, rgba(245,245,179,1) 0%, rgba(255,255,244,1) 49%, rgba(1,1,1,1) 100%);
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
         width: 100%;
         
-       box-shadow:1px 1px 500px blanchedalmond;
-        line-height: 50px;
+    }
+    .list-item {
+        height: 10px;
+        width: 100%;
+       
         text-align: center;
     }
 
     .nav-list a::after {
-       display: none;
+        display: none;
     }
-   
 }

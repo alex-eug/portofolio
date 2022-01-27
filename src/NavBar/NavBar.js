@@ -39,10 +39,10 @@ useEffect(()=>{
         <nav className="header-nav">
       {(toggleMenu || larger > 500) && (
           <ul ref={navList} className="nav-list ">
-              <li className="list-item"><Link className='link-item' to="/presentation">PRESENTATION</Link></li>
-              <li className="list-item"><Link className='link-item' to="/competences">COMPETENCES</Link></li>
-              <li className="list-item"><Link className='link-item' to="/projects">PROJETS</Link></li>
-              <li className="list-item"><Link className='link-item' to="/contact">CONTACT</Link></li>
+              <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/presentation">PRESENTATION</Link></li>
+              <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/competences">COMPETENCES</Link></li>
+              <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/projects">PROJETS</Link></li>
+              <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/contact">CONTACT</Link></li>
           </ul>
           ) }
             <div onClick={navResponsive} className="btn-toggle" ><img className="img-laser" src={laser} alt="sabre laser menu navigation" /></div>

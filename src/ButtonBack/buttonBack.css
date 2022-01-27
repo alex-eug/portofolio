@@ -4,12 +4,11 @@
     left: 50px;
     display: inline;
     z-index: 1500;
-    border-radius: 50%;
 }
 
 .button-back-div  img {
     height: 30px;
-    border-radius: 30%;
+        border-radius: 50%;
     
 }
 

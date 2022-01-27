@@ -176,3 +176,49 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@media screen and (max-width:800px) {
+    
+    .card{
+        height: 200px;
+        width:124px;
+    }
+    .card-on{
+        height: 200px;
+        width:124px;
+    }
+    .card-on2{
+        height: 200px;
+        width:124px;
+    }
+
+@keyframes turnPages {
+    from {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        position: absolute;
+        top: 50%;
+        left: 86%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+    @keyframes turnPages2 {
+        from {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        to {
+            position: absolute;
+            top: 50%;
+            left: 14%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

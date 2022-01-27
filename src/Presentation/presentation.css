@@ -86,4 +86,20 @@
       transform-origin: 50% 100%;
       width: 90%;
     }
+
+    .intro p {
+      color: #2A62CD;
+      font-size: 2rem;
+      
+    }
+
+    
+  .content p {
+    font-weight: 700;
+    line-height: 1.33;
+    margin-bottom: 4rem;
+    text-align:justify;
+    color: #F1E61E;
+  }
+  
   }
