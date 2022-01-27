@@ -45,8 +45,11 @@ return (
     <div className="project-card-none">
     <h1>{elmt.title}</h1>
     <p>{elmt.text}</p>
+    <div className="lien-hypertext">
+    
     <a className='git-hub' href={elmt.gitUrl}><AiFillGithub/></a>
     <a className="site-url" href={elmt.siteUrl}><ImLink/></a>
+    </div>
     <div className='img-projects-card-div'><img className='img-projects-card' src={elmt.img} alt="" /></div>
   </div>
     )

@@ -30,7 +30,7 @@ const titleRef = useRef()
         gsap.fromTo(chubiFoto.current, { top:'0px','left': '1000px',opacity:0  }, { borderRadius: '50%',  'left': '0px', opacity:.9,duration: 2.5, delay: 1 });
         gsap.to(chubiFoto.current, { duration: 2.5, delay: 1 });
 
-        gsap.fromTo(headerPara.current, {opacity:0, color:'white','textShadow': '-5px -200px 9px #f1ff11',fontSize: 0 }, {opacity:1,color:'black','textShadow': '-5px -2px 7px #f1ff11', fontSize: '1.5rem', duration: 1.5, delay: 1.5 });
+        gsap.fromTo(headerPara.current, {opacity:0,color:'transparent','textShadow': '-5px -200px 9px #f1ff11',fontSize: 0 }, {opacity:1,color:'black','textShadow': '-5px -2px 7px #f1ff11', fontSize: '1.5rem', duration: 1.5, delay: 1.5 });
 
     }, []);
 

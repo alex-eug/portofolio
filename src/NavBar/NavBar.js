@@ -39,7 +39,7 @@ useEffect(()=>{
         <nav className="header-nav">
       {(toggleMenu || larger > 500) && (
           <ul ref={navList} className="nav-list ">
-              <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/presentation">PRESENTATION</Link></li>
+              <li  onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/presentation">PRESENTATION</Link></li>
               <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/competences">COMPETENCES</Link></li>
               <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/projects">PROJETS</Link></li>
               <li onClick={()=>setToggleMenu(false)} className="list-item"><Link className='link-item' to="/contact">CONTACT</Link></li>

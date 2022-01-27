@@ -3,7 +3,7 @@
     animation: imgComing 8s 0.1s;
     max-height:130px ;
     border-radius: 15px;
-    border: 1px solid #f0f8ff;
+    border: 5px solid #f0f8ff;
     min-height: 130px;
     
 }
@@ -11,8 +11,40 @@
 .site-url ,.git-hub{
     color: aliceblue;
     font-size: 2rem;
+    margin: 0 10px;
 }
 
+.project-card-none {
+  
+    opacity: 0;
+    display: none;
+}
+
+.project-card {
+    height: 500px;
+    width: 350px;
+    margin: 100px 25px;
+    animation: cardProjectsComing 1s .1s forwards ease-in-out;
+    border-radius: 15px;
+    border:5px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    
+}
+
+.lien-hypertext{
+    padding: 10px 0;
+    border-bottom: 5px solid aliceblue;
+    border-top: 5px solid aliceblue;
+}
+
+@media screen and (max-width:500px) {
+    .project-card{
+        width: 100%;
+    }
+}
 
 @keyframes imgComing {
     from{

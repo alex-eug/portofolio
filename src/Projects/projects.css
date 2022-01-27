@@ -10,7 +10,7 @@
     height: 100vh;
 
     z-index: 1000;
-    animation: blackPage 5s 1s forwards;
+    animation: blackPage 3s .5s forwards;
 }
 .new-page {
     position: absolute;
@@ -20,7 +20,7 @@
     flex-wrap: wrap;
    justify-content: center;
    align-items: flex-start;
-    padding: 50px;
+   
     z-index: 1002;
     background: rgb(0, 0, 0);
 }
@@ -28,26 +28,8 @@
 .before-page{
     max-height: 200vh;
 }
-.project-card-none {
-    height: 300px;
-    width: 200px;
-    opacity: 0;
-    display: none;
-}
 
-.project-card {
-    height: 500px;
-    width: 350px;
-    margin: 100px 25px;
-    animation: cardProjectsComing 5s .1s forwards ease-in-out;
-    border-radius: 15px;
-    border:2px solid aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
-    
-}
+
 
 @keyframes blackPage {
     from {
@@ -114,7 +96,7 @@
     height: 300px;
     width: 200px;
     box-shadow: 1px 1px 1px rgb(156, 156, 156);
-    animation: turnPages 1.5s 2.5s ease-in-out forwards;
+    animation: turnPages 1.5s 2s ease-in-out forwards;
 }
 .card-on2 {
     position: absolute;
@@ -126,7 +108,7 @@
     height: 300px;
     width: 200px;
     box-shadow: 1px 1px 1px rgb(156, 156, 156);
-    animation: turnPages2 1.5s 1s ease-in-out forwards;
+    animation: turnPages2 1.5s .5s ease-in-out forwards;
 }
 
 .vador-project {
@@ -177,7 +159,7 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
     
     .card{
         height: 200px;
@@ -191,6 +173,15 @@
         height: 200px;
         width:124px;
     }
+    .square{
+        height:250px;
+        width: 250px;
+    }
+    .card-plate{
+        height: 50%;
+        width: 100%;
+    }
+
 
 @keyframes turnPages {
     from {
@@ -202,7 +193,7 @@
     to {
         position: absolute;
         top: 50%;
-        left: 86%;
+        left: 84%;
         transform: translate(-50%, -50%);
     }
 }
@@ -217,7 +208,7 @@
         to {
             position: absolute;
             top: 50%;
-            left: 14%;
+            left: 16%;
             transform: translate(-50%, -50%);
         }
     }
