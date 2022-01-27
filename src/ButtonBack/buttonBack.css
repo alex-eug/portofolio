@@ -1,0 +1,21 @@
+.button-back-div{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    display: inline;
+    z-index: 1500;
+    border-radius: 50%;
+}
+
+.button-back-div  img {
+    height: 30px;
+    border-radius: 30%;
+    
+}
+
+@media screen and (max-width:500px){
+   .button-back-div{
+
+       top: 10px;
+   }
+}

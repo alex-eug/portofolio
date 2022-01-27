@@ -7,6 +7,7 @@ import Chuba from './chuba.jpeg'
  import Vador from './vador.jpg'
 import { ThemeContext } from '../Context/ThemeContext';
 import { gsap } from "gsap";
+import ButtonBack from '../ButtonBack/ButtonBack';
 
 
 export default function Header() {
@@ -17,19 +18,19 @@ const titleRef = useRef()
     const headerPara = useRef()
 
     useEffect(() => {
+       
         gsap.fromTo(titleRef.current, { 'textShadow': '-5px -200px 9px #f1ff11' }, { 'textShadow': '-5px -2px 7px #f1ff11', duration: 2 });
         
-        gsap.fromTo(titleRef.current, { 'top': '0px', fontSize: '1rem',opacity:0 }, {'top': '200px', fontSize: '6.5rem',opacity:1, duration: 4.5 });
-
+         gsap.fromTo(titleRef.current, { color:'white','top': '0px', fontSize: '1rem',opacity:0 }, {color:'black','top': '200px', fontSize: '6.5rem',opacity:1, duration: 4.5 });
        
 
-        gsap.fromTo(alexFoto.current, { 'right': '1000px',opacity:0 }, {  borderRadius: '50%', 'right': '0px',opacity:.8 ,duration: 1.5, delay: 1 });
-        gsap.to(alexFoto.current, { rotation: "+=360", duration: 1.5, delay: 1 });
+        gsap.fromTo(alexFoto.current, {top:'0px', 'right': '1000px',opacity:0 }, {  borderRadius: '50%', 'right': '0px',opacity:.9 ,duration: 2.5, delay: 1 });
+        gsap.to(alexFoto.current, {  duration: 2.5, delay: 1 });
 
-        gsap.fromTo(chubiFoto.current, { 'left': '1000px',opacity:0  }, { borderRadius: '50%',  'left': '0px', opacity:.8,duration: 1.5, delay: 1 });
-        gsap.to(chubiFoto.current, { rotation: "-=360", duration: 1.5, delay: 1 });
+        gsap.fromTo(chubiFoto.current, { top:'0px','left': '1000px',opacity:0  }, { borderRadius: '50%',  'left': '0px', opacity:.9,duration: 2.5, delay: 1 });
+        gsap.to(chubiFoto.current, { duration: 2.5, delay: 1 });
 
-        gsap.fromTo(headerPara.current, { fontSize: 0 }, { fontSize: '1.5rem', duration: 1.5, delay: 1.5 });
+        gsap.fromTo(headerPara.current, {opacity:0, color:'white','textShadow': '-5px -200px 9px #f1ff11',fontSize: 0 }, {opacity:1,color:'black','textShadow': '-5px -2px 7px #f1ff11', fontSize: '1.5rem', duration: 1.5, delay: 1.5 });
 
     }, []);
 
@@ -40,20 +41,21 @@ const titleRef = useRef()
 
     return (
         <header className='header-container'>
+        <ButtonBack />
         <button
-            onClick={toggleTheme}
-            className={theme ? 'dark-mode' : 'hidden'}
-            title="Rejoindre l'empire">
+        onClick={toggleTheme}
+        className={theme ? 'dark-mode' : 'hidden'}
+        title="Rejoindre l'empire">
         </button>
         <button
-            onClick={toggleTheme}
-            className={theme ? 'hidden' : 'light-mode'}
-            title="Rejoindre la république">
+        onClick={toggleTheme}
+        className={theme ? 'hidden' : 'light-mode'}
+        title="Rejoindre la république">
         </button>
-<div className='title-foto-para'>
+        <div className='title-foto-para'>
+        <h1 style={{'padding':'20px'}} className="header-title" ref={titleRef}>STAR WORK</h1>
         
 
-<h1 className="header-title" ref={titleRef}>STAR WORK</h1>
             
             
 
@@ -74,13 +76,14 @@ const titleRef = useRef()
             </div>
             <div className={theme ? 'hidden' : 'img-profil-container'}>
                 <img
-                    className="foto"
+                    
+                    className="foto vador"
                     src={Vador}
                     alt="foto profil"
                 />
             </div>
 
-            <p className={theme ? "hidden" : "header-para father"}>Je suis ton père</p>
+            <p style={{'color':'white'}} className={theme ? "hidden" : "header-para father"}>Je suis ton père</p>
             <p ref={headerPara} className={theme ? "header-para" : "hidden"}>Je suis à droite à gauche c'est chubi</p>
 
             </div>

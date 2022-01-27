@@ -1,35 +1,63 @@
-.projects-container{
+.projects-container {
     width: 100vw;
     height: 100vh;
-    background: rgb(246,60,60);
-    background: linear-gradient(63deg, rgba(246,60,60,1) 0%, rgba(35, 35, 37, 0.973) 50%, rgba(42,98,205,1) 100%);
+    background: rgb(246, 60, 60);
+    background: linear-gradient(63deg, rgba(246, 60, 60, 1) 0%, rgba(35, 35, 37, 0.973) 50%, rgba(42, 98, 205, 1) 100%);
 }
-.black-page{
-   position: absolute;
+.black-page {
+    position: absolute;
     width: 100vw;
     height: 100vh;
-    
+
     z-index: 1000;
-    animation:blackPage 7s 1s  forwards
+    animation: blackPage 5s 1s forwards;
 }
-.new-page{
-   position: absolute;
+.new-page {
+    position: absolute;
     width: 100vw;
-    height: 100vh;
-    
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+    padding: 50px;
     z-index: 1002;
-   background:url(../Header/vador.jpg);
+    background: rgb(0, 0, 0);
 }
 
-@keyframes blackPage{
-    from{
+.before-page{
+    max-height: 200vh;
+}
+.project-card-none {
+    height: 300px;
+    width: 200px;
+    opacity: 0;
+    display: none;
+}
+
+.project-card {
+    height: 500px;
+    width: 350px;
+    margin: 100px 25px;
+    animation: cardProjectsComing 5s .1s forwards ease-in-out;
+    border-radius: 15px;
+    border:2px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+@keyframes blackPage {
+    from {
         background-color: rgba(0, 0, 0, 0);
     }
-    to{
+    to {
         background-color: rgb(0, 0, 0);
     }
 }
-.card-plate{
+.card-plate {
     width: 70vw;
     height: 70vh;
     background: rgba(0, 0, 0, 0.425);
@@ -37,91 +65,114 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.square{
+.square {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);;
-        height: 400px;
-        width: 400px;
-        background: linear-gradient(45deg,rgba(42,98,205,1) 0%, rgba(35,35,37,0.8018557764902836) 50%,  rgba(246,60,60,1) 100%);
-            transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(
+        45deg,
+        rgba(42, 98, 205, 1) 0%,
+        rgba(35, 35, 37, 0.8018557764902836) 50%,
+        rgba(246, 60, 60, 1) 100%
+    );
+    transform-origin: center;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     color: turquoise;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: black;
     height: 300px;
     width: 200px;
-    box-shadow: 2px 2px 1px rgb(156, 156, 156), 3px 3px 1px black, 4px 4px 1px rgb(156, 156, 156), 5px 5px 1px black, 6px 6px 1px rgb(156, 156, 156), 7px 7px 1px black, 8px 8px 1px rgb(156, 156, 156), 9px 9px 1px black, 10px 10px 1px rgb(156, 156, 156);
+    box-shadow: 2px 2px 1px rgb(156, 156, 156), 3px 3px 1px black, 4px 4px 1px rgb(156, 156, 156), 5px 5px 1px black,
+        6px 6px 1px rgb(156, 156, 156), 7px 7px 1px black, 8px 8px 1px rgb(156, 156, 156), 9px 9px 1px black,
+        10px 10px 1px rgb(156, 156, 156);
     border-radius: 15px;
+    cursor: pointer;
 }
 
-.card-on{
+.card-on {
     position: absolute;
     top: 50%;
     left: 50%;
-     transform: translate(-50%,-50%); 
+    transform: translate(-50%, -50%);
     background: rgb(0, 0, 0);
     border-radius: 15px;
     height: 300px;
     width: 200px;
     box-shadow: 1px 1px 1px rgb(156, 156, 156);
-    animation: turnPages 3s 4s ease-in-out forwards;
+    animation: turnPages 1.5s 2.5s ease-in-out forwards;
 }
-.card-on2{
+.card-on2 {
     position: absolute;
     top: 50%;
     left: 50%;
-     transform: translate(-50%,-50%); 
+    transform: translate(-50%, -50%);
     background: rgb(0, 0, 0);
     border-radius: 15px;
     height: 300px;
     width: 200px;
     box-shadow: 1px 1px 1px rgb(156, 156, 156);
-    animation: turnPages2 3s 1s ease-in-out forwards;
+    animation: turnPages2 1.5s 1s ease-in-out forwards;
 }
 
-.vador-project{
+.vador-project {
     width: 70%;
     margin-top: 25%;
 }
 
-@keyframes turnPages {
-    from{
 
+@keyframes cardProjectsComing {
+    from {
+        background: rgba(0, 0, 0, 0.014);
+        color: black;
+        opacity: 0;
+
+    }
+    to {
+        background: rgb(0, 0, 0);
+        color: aliceblue;
+        opacity: 1;
+}
+}
+@keyframes turnPages {
+    from {
         position: absolute;
-    top: 50%;
-    left: 50%;
-     transform: translate(-50%,-50%);
-    }to{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    to {
         position: absolute;
         top: 50%;
         left: 35%;
-         transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 @keyframes turnPages2 {
-    from{
-
+    from {
         position: absolute;
-    top: 50%;
-    left: 50%;
-     transform: translate(-50%,-50%);
-    }to{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    to {
         position: absolute;
         top: 50%;
         left: 65%;
-         transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
