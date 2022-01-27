@@ -1,0 +1,119 @@
+.container-container-contact{
+    height: 100vh;
+    width: 100vw;
+}
+
+.contact-container{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height:550px;
+    border: 5px solid rgb(255, 255, 255);
+   border-radius: 10px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    
+    padding: 25px;
+    background: rgb(54, 54, 54);
+  
+    
+}
+
+.contact-container:hover{
+    box-shadow: 2px 2px 50px aliceblue, -2px -2px 50px aliceblue, -2px -2px 10px rgb(3, 7, 255),2px 2px 10px rgb(159, 161, 250), inset 2px 2px 10px aliceblue,inset -2px -2px 10px aliceblue, inset 2px 2px 10px rgb(3, 7, 255),inset -2px -2px 10px rgb(3, 7, 255);
+}
+
+.contact-para{
+    color: aliceblue;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+  
+  .button-contact {
+    width: 250px;
+	height: 80px;
+	cursor: pointer;
+	background: #333;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+	color: rgb(161, 161, 161);
+	font-size: 20px;
+}
+
+  
+  
+  .button-contact:active {
+      box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+      font-size: 19px;
+      transition: 500ms;
+  }
+  
+  .button-contact:focus {
+      outline: none;
+  }
+  
+  .red:hover {
+      color: #f07171;
+      text-shadow: 0px 0px 10px #f07171;
+  }
+  
+  .blue:hover {
+      color: #71b7f0;
+      text-shadow: 0px 0px 10px #71b7f0;
+  }
+  .green:hover {
+    color: #93f071;
+text-shadow: 0px 0px 10px #93f071;
+}
+
+  .button-reseau-contact {
+    margin: 50px 20px;
+    width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	cursor: pointer;
+	background: #333;
+	
+	border: none;
+	
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+	color: rgb(161, 161, 161);
+	font-size: 20px;
+}
+
+.button-reseau-contact:active {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    font-size: 19px;
+    transition: 500ms;
+}
+
+.contact-linkedin,.contact-git-hub, .contact-twitter{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+   
+}
+
+.contact-linkedin{
+    color:#0A66C2;
+    
+}
+.contact-twitter{
+    color: #1A8CD8;
+    
+}
+
+.contact-linkedin:active,.contact-git-hub:active, .contact-twitter:active{
+    color:#f1ff11
+}

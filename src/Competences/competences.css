@@ -35,14 +35,13 @@
 }
 
 .skill .skill-name span {
-    margin: 10px 0;
+    margin: 10px 20px;
 
-    padding: 10px 20px;
+    padding: 5px 5px;
     text-align: center;
     border-radius: 50px;
     border: 3px solid #ebecf0;
-    transition: 0.5s;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color:rgba(240, 248, 255, 0.651);
 }
 
 .skill .skill-name span:hover {
@@ -61,10 +60,11 @@
     height: 30px;
     border-radius: 50px;
     box-shadow: inset 5px 5px 2px #d9dade, inset -5px -5px 2px #d9dade;
+    background: rgba(240, 248, 255, 0.445);
 }
 
 .bar .progress {
-    background: linear-gradient(0.9turn, #f63c3c, #3d4949, #2A62CD);
+    background: linear-gradient(0.9turn, #f63c3cc4, #3d4949, #2a63cdc7);
     box-shadow: 1px 1px 50px #80a5cf;
     border-radius: 50px;
     height: 100%;

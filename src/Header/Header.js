@@ -19,7 +19,7 @@ const titleRef = useRef()
 
     useEffect(() => {
        
-        gsap.fromTo(titleRef.current, { 'textShadow': '-5px -200px 9px #f1ff11' }, { 'textShadow': '-5px -2px 7px #f1ff11', duration: 2 });
+        gsap.fromTo(titleRef.current, { 'textShadow': '-5px -200px 9px rgb(156, 204, 247)' }, { 'textShadow': '-5px -2px 7px #f1ff11', duration: 2 });
         
          gsap.fromTo(titleRef.current, { color:'white','top': '0px', fontSize: '1rem',opacity:0 }, {color:'black','top': '200px', fontSize: '6.5rem',opacity:1, duration: 4.5 });
        
@@ -83,7 +83,7 @@ const titleRef = useRef()
                 />
             </div>
 
-            <p style={{'color':'white'}} className={theme ? "hidden" : "header-para father"}>Je suis ton père</p>
+            <p  className={theme ? "hidden" : "header-para father"}>Je suis ton père</p>
             <p ref={headerPara} className={theme ? "header-para" : "hidden"}>Je suis à droite à gauche c'est chubi</p>
 
             </div>
