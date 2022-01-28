@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './buttonContact.css'
-import Contact from '../Contact';
+
 
 export default function ButtonContact(props) {
 
