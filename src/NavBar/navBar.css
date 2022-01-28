@@ -63,7 +63,7 @@
     background: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .btn-toggle {
         display: block;
         z-index: 10001;

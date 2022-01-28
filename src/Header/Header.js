@@ -21,7 +21,7 @@ const titleRef = useRef()
        
         gsap.fromTo(titleRef.current, { 'textShadow': '-5px -200px 9px rgb(156, 204, 247)' }, { 'textShadow': '-5px -2px 7px #f1ff11', duration: 2 });
         
-         gsap.fromTo(titleRef.current, { color:'white','top': '0px', fontSize: '1rem',opacity:0 }, {color:'black','top': '200px', fontSize: '6.5rem',opacity:1, duration: 4.5 });
+         gsap.fromTo(titleRef.current, { color:'transparent','top': '0px', fontSize: '1rem',opacity:0 }, {color:'black','top': '200px', fontSize: '6.5rem',opacity:1, duration: 4.5 });
        
 
         gsap.fromTo(alexFoto.current, {top:'0px', 'right': '1000px',opacity:0 }, {  borderRadius: '50%', 'right': '0px',opacity:.9 ,duration: 2.5, delay: 1 });
@@ -38,9 +38,31 @@ const titleRef = useRef()
 
     const { theme, toggleTheme } = useContext(ThemeContext)
     console.log(theme);
-
+    
     return (
         <header className='header-container'>
+        <video
+            className={theme ? 'hidden' : 'video'}
+            autoPlay
+            muted
+            loop
+        >
+            <source
+                src={darkSky}
+                type="video/mp4"
+            />
+        </video>
+        <video
+            className={theme ? 'video' : 'hidden'}
+            autoPlay
+            muted
+            loop
+        >
+            <source
+                src={lightSky}
+                type="video/mp4"
+            />
+        </video>
         <ButtonBack />
         <button
         onClick={toggleTheme}
@@ -55,13 +77,13 @@ const titleRef = useRef()
         <div className='title-foto-para'>
         <h1 style={{'padding':'20px'}} className="header-title" ref={titleRef}>STAR WORK</h1>
         
-
-            
-            
-
-
-            <div className={theme ? 'img-profil-container' : 'hidden'}>
-            <img
+        
+        
+        
+        
+        
+        <div className={theme ? 'img-profil-container' : 'hidden'}>
+        <img
             ref={chubiFoto}
             className="foto"
             src={Chuba}
@@ -81,35 +103,13 @@ const titleRef = useRef()
                     src={Vador}
                     alt="foto profil"
                 />
-            </div>
+            </div >
 
             <p  className={theme ? "hidden" : "header-para father"}>Je suis ton père</p>
             <p ref={headerPara} className={theme ? "header-para" : "hidden"}>Je suis à droite à gauche c'est chubi</p>
 
             </div>
 
-            <video
-                className={theme ? 'hidden' : 'video'}
-                autoPlay
-                muted
-                loop
-            >
-                <source
-                    src={darkSky}
-                    type="video/mp4"
-                />
-            </video>
-            <video
-                className={theme ? 'video' : 'hidden'}
-                autoPlay
-                muted
-                loop
-            >
-                <source
-                    src={lightSky}
-                    type="video/mp4"
-                />
-            </video>
         </header>
 
     )
