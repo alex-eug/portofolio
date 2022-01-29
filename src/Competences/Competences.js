@@ -5,6 +5,7 @@ export default function Competences() {
   return (
     
     <div className='competence-container'>
+    <div className="parallax">
     <div className="skill">
     <div className="skill-name">
     <span>HTML</span>
@@ -15,6 +16,7 @@ export default function Competences() {
     <span>SQL</span>
     <span>SCRUM</span>
     </div>
+    
     <div className="bar-container">
     <div className="bar"><div className="progress"></div></div>
     <div className="bar"><div className="progress"></div></div>
@@ -23,6 +25,7 @@ export default function Competences() {
     <div className="bar"><div className="progress"></div></div>
     <div className="bar"><div className="progress"></div></div>
     <div className="bar"><div className="progress"></div></div>
+    </div>
     </div>
     </div>
     </div>

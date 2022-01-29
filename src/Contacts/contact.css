@@ -1,23 +1,24 @@
 .container-container-contact{
-    height: 100vh;
-    width: 100vw;
+   
+    height: auto;
 }
 
 .contact-container-hidden{
-    
-   /* display: none; */
-   height: 100px;
-   width: 25px;
-   background-color: aqua;
+  
+   display: none;
+  
 }
 
 .contact-container{
+   margin-top: 250px;
     text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 800px;
-    height:550px;
+    width: auto;
+    height: auto;
+    max-width: 800px;
+    max-height:550px;
     border: 5px solid aliceblue;
    border-radius: 10px;
     position: absolute;
@@ -27,6 +28,7 @@
     padding: 20px;
     background: rgb(54, 54, 54);
     box-shadow: 1px 1px 120px rgb(31, 35, 255), -2px -2px 50px aliceblue, -2px -2px 10px aliceblue,2px 2px 10px rgb(15, 19, 255), inset 2px 2px 50px rgb(191, 225, 255),inset -2px -2px 10px aliceblue, inset 2px 2px 10px aliceblue,inset -2px -2px 20px rgb(159, 161, 250);
+    animation: appearContact .3s;
 }
 
 .contact-para{
@@ -35,6 +37,7 @@
     font-weight: 700;
     text-transform: uppercase;
     padding: 25px;
+    animation: appearContact .7s;
 }
 
   
@@ -49,13 +52,14 @@
 	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
 	color: rgb(161, 161, 161);
 	font-size: 20px;
+    animation: appearContact .7s;
 }
 
   
   
   .button-contact:active {
       box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
-      font-size: 19px;
+      font-size: 1rem;
       transition: 500ms;
   }
   
@@ -63,18 +67,15 @@
       outline: none;
   }
   
-  .red:hover {
-      color: #f07171;
-      text-shadow: 0px 0px 10px #f07171;
+  .red:hover{
+    color: rgb(245, 89, 89);
+    text-shadow: 0px 0px 10px rgb(245, 89, 89);
   }
-  
-  .blue:hover {
-      color: #71b7f0;
-      text-shadow: 0px 0px 10px #71b7f0;
-  }
-  .green:hover {
-    color: #93f071;
-text-shadow: 0px 0px 10px #93f071;
+
+
+  .green:active {
+    color: rgb(101, 236, 84);
+text-shadow: 0px 0px 10px rgb(101, 236, 84);
 }
 
   .button-reseau-contact {
@@ -83,13 +84,14 @@ text-shadow: 0px 0px 10px #93f071;
 	height: 100px;
     border-radius: 50%;
 	cursor: pointer;
-	background: #333;
+	background: rgb(51, 51, 51);
 	
 	border: none;
 	
 	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
 	color: rgb(161, 161, 161);
 	font-size: 20px;
+    animation: appearContact .7s;
 }
 
 .button-reseau-contact:active {
@@ -104,7 +106,7 @@ text-shadow: 0px 0px 10px #93f071;
     justify-content: center;
     align-items: center;
     color: aliceblue;
-   
+   opacity: .7;
 }
 
 .contact-linkedin{
@@ -117,5 +119,114 @@ text-shadow: 0px 0px 10px #93f071;
 }
 
 .contact-linkedin:active,.contact-git-hub:active, .contact-twitter:active{
-    color:#f1ff11
+    color:rgb(28, 212, 3)
+}
+
+.contact-linkedin:hover,.contact-git-hub:hover, .contact-twitter:hover{
+    opacity: 1;
+}
+
+@keyframes appearContact {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .contact-container{
+        height: auto;
+        width: 60%;
+        
+    }
+    
+    .button-contact-appear{
+        position: absolute;
+        top:150px;
+        left:50%
+    }
+    
+    .button-contact{
+        width: 200px;
+        height: 75px;
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .button-contact-div{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .button-contact-appear{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 25px;
+    }
+    
+    .button-contact-appear-outside{
+        width: 66px;
+        height: 66px;
+    }
+    .button-contact-appear-inside{
+        width: 8px;
+        height: 8px;    
+    }
+    
+    .container-container-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    
+    .button-reseau-contact-div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-para{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+   
+   .container-container-contact{
+       height: auto;
+   }
+
+    .contact-btn-menu{
+       position: absolute;
+       top: 100px;
+       left: 50%;
+   }
+    .contact-container{
+        
+        display: flex;
+       flex-direction: column;
+        height:auto;
+        width: 100%;
+        
+    }
+    .contact-container-hidden{
+        display: flex;
+       flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+   .button-contact-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+    .button-reseau-contact-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-reseau-contact{
+        margin: 15px;
+    }
 }

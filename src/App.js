@@ -16,6 +16,7 @@ function App() {
     <div className="App">
     <ThemeContextProvider>
     
+    <NavBar />
     <Routes>
     <Route path="/" element={<Header />} />
     <Route path="/presentation" element={<Presentation />} />
@@ -25,7 +26,6 @@ function App() {
     <Route path="*" element={<NotFound />} />
     </Routes>
     </ThemeContextProvider>
-    <NavBar />
     <ButtonBack />  
     </div>
   );

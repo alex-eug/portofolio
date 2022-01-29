@@ -27,15 +27,15 @@ export default function Contact() {
         <div className="contact-container contact-container-hidden">
                 <p className="contact-para">Vous pouvez me contacter par mail en suivant le lien ou par téléphone disponible sur mon cv en téléchargement</p>
 
-                <div>
-                    <button className="button-reseau-contact  "><a className='contact-linkedin green' href="https://www.linkedin.com/in/alexandre-eugene-toulouse/"><TiSocialLinkedinCircular /></a></button>
-                    <button className="button-reseau-contact "><a className='contact-git-hub green' href="https://github.com/alex-eug"><AiFillGithub /></a></button>
-                    <button className="button-reseau-contact "><a className='contact-twitter green' href="https://twitter.com/home"><TiSocialTwitterCircular /></a></button>
+                <div className='button-reseau-contact-div'>
+                    <button className="button-reseau-contact "><a className='contact-linkedin ' href="https://www.linkedin.com/in/alexandre-eugene-toulouse/"><TiSocialLinkedinCircular /></a></button>
+                    <button className="button-reseau-contact "><a className='contact-git-hub ' href="https://github.com/alex-eug"><AiFillGithub /></a></button>
+                    <button className="button-reseau-contact "><a className='contact-twitter ' href="https://twitter.com/home"><TiSocialTwitterCircular /></a></button>
 
                 </div>
-                <div>
-                    <button className="button-contact red">Télécharger CV</button>
-                    <button className="button-contact blue">Envoyer un mail</button>
+                <div className='button-contact-div'>
+                    <button className="button-contact green red">Télécharger CV</button>
+                    <button className="button-contact green red">Envoyer un mail</button>
                 </div>
 
             </div>

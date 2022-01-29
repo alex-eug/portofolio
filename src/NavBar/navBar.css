@@ -4,7 +4,8 @@
     width: 100%;
     height: 50px;
     background: rgba(0, 0, 0, 0.616);
-    z-index: 1000;
+    z-index: 1500;
+    margin-bottom: .1px;
 }
 .nav-list {
     list-style-type: none;
@@ -71,10 +72,24 @@
     .header-nav{
         background: black;
     }
+    .list-item {
+        height: 10px;
+        width: 100%;
+        
+        text-align: center;
+    }
+    .link-item:hover{
+        color: aliceblue;
+        text-shadow:1px 1px 5px  black;
+    }
+    
+    .nav-list a::after {
+        display: none;
+    }
     .nav-list {
         flex-direction: column;
         background: rgb(245,245,179);
-background: radial-gradient(circle, rgba(245,245,179,1) 0%, rgba(255,255,244,1) 49%, rgba(1,1,1,1) 100%);
+    background: radial-gradient(circle, rgba(245,245,179,1) 0%, rgba(255,255,244,1) 49%, rgba(1,1,1,1) 100%);
         position: absolute;
         align-items: center;
         justify-content: center;
@@ -82,18 +97,5 @@ background: radial-gradient(circle, rgba(245,245,179,1) 0%, rgba(255,255,244,1) 
         width: 100%;
         
     }
-    .list-item {
-        height: 10px;
-        width: 100%;
-       
-        text-align: center;
-    }
-    .link-item:hover{
-       color: aliceblue;
-        text-shadow:1px 1px 5px  black;
-    }
-
-    .nav-list a::after {
-        display: none;
-    }
+    
 }

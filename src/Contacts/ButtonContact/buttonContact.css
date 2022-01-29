@@ -1,5 +1,6 @@
 .button-contact-appear{
     position: absolute;
+    display: inline;
     top: 40%;
     left: 10%;
     transform: translate(-50%, -50%);
