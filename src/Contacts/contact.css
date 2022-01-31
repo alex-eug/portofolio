@@ -195,8 +195,9 @@
 @media screen and (max-width: 800px) {
     .container-container-contact {
         height: auto;
+     
     }
-
+    
     .contact-btn-menu {
         position: absolute;
         top: 130px;
@@ -204,14 +205,16 @@
     }
     
     .contact-container-hidden {
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         height: auto;
         width: 90%;
-        padding: 40px;
+        padding: 15px 30px;
     }
     .button-contact-div {
         display: flex;
+        flex-direction: column;
         align-items: center;
         padding: 30px;
         
@@ -220,6 +223,7 @@
         width: 130px;
         height: 60px;
        padding: 10px;
+       user-select: none;
     }
 
     .button-reseau-contact-div {
@@ -230,9 +234,11 @@
         margin: 15px;
         width: 70px;
         height: 70px;
+        user-select: none;
     }
     .button-reseau-contact a{
        font-size:40px;
+       user-select: none;
        
     }
 }

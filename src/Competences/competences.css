@@ -2,7 +2,6 @@
 
 .competence-container {
 
-    margin-top: 150px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -30,7 +29,12 @@
 }
 
 .skill {
-    margin-top: 15%;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 1%;
     display: flex;
     justify-content: center;
     z-index: 10;

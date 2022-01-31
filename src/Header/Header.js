@@ -37,7 +37,7 @@ const titleRef = useRef()
 
 
     const { theme, toggleTheme } = useContext(ThemeContext)
-    console.log(theme);
+    
     
     return (
         <header className='header-container'>
