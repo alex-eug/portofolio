@@ -79,7 +79,8 @@
         text-align: center;
     }
     .list-item .link-item {
-        color:rgb(139, 139, 37)
+        color:rgb(139, 139, 37);
+       
     }
 
     .link-item:hover{

@@ -1,7 +1,7 @@
 .video {
     height: 100vh;
     max-width: 100%;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .hidden {
     display: none;
@@ -166,6 +166,13 @@
 .foto.vador {
     width: 50px;
     height: 50px;
+}
+
+.foto{
+    width: 60px;
+    height: 60px;
+    margin-top: 200px;
+    border-radius: 50%;
 }
 }
 /* .dark-mode {

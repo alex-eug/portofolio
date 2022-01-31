@@ -4,6 +4,7 @@ import { TiSocialLinkedinCircular } from 'react-icons/ti'
 import { AiFillGithub } from 'react-icons/ai'
 import { TiSocialTwitterCircular } from 'react-icons/ti'
 import ButtonContact from './ButtonContact/ButtonContact';
+import CV from './cv-Alex-2022.pdf'
 
 
 export default function Contact() {
@@ -34,8 +35,8 @@ export default function Contact() {
 
                 </div>
                 <div className='button-contact-div'>
-                    <button className="button-contact green red">Télécharger CV</button>
-                    <button className="button-contact green red">Envoyer un mail</button>
+                    <button className="button-contact green"><a className=" green" href={CV}>Télécharger CV</a></button>
+                    <button className="button-contact green"><a className=" green" href="mailto:alexandre.eugene31@gmail.com">Envoyer un mail</a></button>
                 </div>
 
             </div>
