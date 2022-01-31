@@ -1,16 +1,13 @@
-.container-container-contact{
-   
+.container-container-contact {
     height: auto;
 }
 
-.contact-container-hidden{
-  
-   display: none;
-  
+.contact-container-hidden {
+    display: none;
 }
 
-.contact-container{
-   margin-top: 250px;
+.contact-container {
+    margin-top: 50px;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -18,80 +15,78 @@
     width: auto;
     height: auto;
     max-width: 800px;
-    max-height:550px;
+    max-height: 550px;
     border: 5px solid aliceblue;
-   border-radius: 10px;
+    border-radius: 10px;
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-50%,  -50%);
-    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding: 15px;
     background: rgb(54, 54, 54);
-    box-shadow: 1px 1px 120px rgb(31, 35, 255), -2px -2px 50px aliceblue, -2px -2px 10px aliceblue,2px 2px 10px rgb(15, 19, 255), inset 2px 2px 50px rgb(191, 225, 255),inset -2px -2px 10px aliceblue, inset 2px 2px 10px aliceblue,inset -2px -2px 20px rgb(159, 161, 250);
-    animation: appearContact .3s;
+    box-shadow: 1px 1px 120px rgb(31, 35, 255), -2px -2px 50px aliceblue, -2px -2px 10px aliceblue,
+        2px 2px 10px rgb(15, 19, 255), inset 2px 2px 50px rgb(191, 225, 255), inset -2px -2px 10px aliceblue,
+        inset 2px 2px 10px aliceblue, inset -2px -2px 20px rgb(159, 161, 250);
+    animation: appearContact 0.3s;
 }
 
-.contact-para{
+.contact-para {
     color: aliceblue;
     font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 25px;
-    animation: appearContact .7s;
+    animation: appearContact 0.7s;
 }
 
-  
-  .button-contact {
+.button-contact {
     width: 250px;
-	height: 80px;
-	cursor: pointer;
-	background: #333;
-	margin: 10px;
-	border: none;
-	border-radius: 10px;
-	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
-	color: rgb(161, 161, 161);
-	font-size: 20px;
-    animation: appearContact .7s;
+    height: 80px;
+    cursor: pointer;
+    background: #333;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    color: rgb(161, 161, 161);
+    font-size: 20px;
+    animation: appearContact 0.7s;
 }
 
-  
-  
-  .button-contact:active {
-      box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
-      font-size: 1rem;
-      transition: 500ms;
-  }
-  
-  .button-contact:focus {
-      outline: none;
-  }
-  
-  .red:hover{
+.button-contact:active {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    font-size: 1rem;
+    transition: 500ms;
+}
+
+.button-contact:focus {
+    outline: none;
+}
+
+.red:hover {
     color: rgb(245, 89, 89);
     text-shadow: 0px 0px 10px rgb(245, 89, 89);
-  }
-
-
-  .green:active {
-    color: rgb(101, 236, 84);
-text-shadow: 0px 0px 10px rgb(101, 236, 84);
 }
 
-  .button-reseau-contact {
+.green:active {
+    color: rgb(101, 236, 84);
+    text-shadow: 0px 0px 10px rgb(101, 236, 84);
+}
+
+.button-reseau-contact {
     margin: 50px 20px;
     width: 100px;
-	height: 100px;
+    height: 100px;
     border-radius: 50%;
-	cursor: pointer;
-	background: rgb(51, 51, 51);
-	
-	border: none;
-	
-	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
-	color: rgb(161, 161, 161);
-	font-size: 20px;
-    animation: appearContact .7s;
+    cursor: pointer;
+    background: rgb(51, 51, 51);
+
+    border: none;
+
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    color: rgb(161, 161, 161);
+    font-size: 20px;
+    animation: appearContact 0.7s;
 }
 
 .button-reseau-contact:active {
@@ -100,133 +95,140 @@ text-shadow: 0px 0px 10px rgb(101, 236, 84);
     transition: 500ms;
 }
 
-.contact-linkedin,.contact-git-hub, .contact-twitter{
+.contact-linkedin,
+.contact-git-hub,
+.contact-twitter {
     font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: aliceblue;
-   opacity: .7;
+    opacity: 0.7;
 }
 
-.contact-linkedin{
-    color:#0A66C2;
-    
+.contact-linkedin {
+    color: #0a66c2;
 }
-.contact-twitter{
-    color: #1A8CD8;
-    
+.contact-twitter {
+    color: #1a8cd8;
 }
 
-.contact-linkedin:active,.contact-git-hub:active, .contact-twitter:active{
-    color:rgb(28, 212, 3)
+.contact-linkedin:active,
+.contact-git-hub:active,
+.contact-twitter:active {
+    color: rgb(28, 212, 3);
 }
 
-.contact-linkedin:hover,.contact-git-hub:hover, .contact-twitter:hover{
+.contact-linkedin:hover,
+.contact-git-hub:hover,
+.contact-twitter:hover {
     opacity: 1;
 }
 
 @keyframes appearContact {
-    from{
-        opacity:0;
+    from {
+        opacity: 0;
     }
-    to{
-        opacity:1;
+    to {
+        opacity: 1;
     }
 }
 
-@media screen and (max-width:1200px) {
-    .contact-container{
+@media screen and (max-width: 1200px) {
+    .contact-container {
         height: auto;
         width: 60%;
-        
     }
-    
-    .button-contact-appear{
+
+    .button-contact-appear {
         position: absolute;
-        top:150px;
-        left:50%
+        top: 150px;
+        left: 50%;
     }
-    
-    .button-contact{
+
+    .button-contact {
         width: 200px;
         height: 75px;
         font-size: 1rem;
         padding: 5px;
     }
-    .button-contact-div{
+    .button-contact-div {
         display: flex;
         justify-content: center;
-       
     }
-    .button-contact-appear{
+    .button-contact-appear {
         height: 100px;
         width: 100px;
         margin-bottom: 25px;
     }
-    
-    .button-contact-appear-outside{
+
+    .button-contact-appear-outside {
         width: 66px;
         height: 66px;
     }
-    .button-contact-appear-inside{
+    .button-contact-appear-inside {
         width: 8px;
-        height: 8px;    
+        height: 8px;
     }
-    
-    .container-container-contact{
+
+    .container-container-contact {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: auto;
     }
-    
-    .button-reseau-contact-div{
+
+    .button-reseau-contact-div {
         display: flex;
         justify-content: center;
     }
 
-    .contact-para{
+    .contact-para {
         display: none;
     }
 }
 
-@media screen and (max-width:800px){
-   
-   .container-container-contact{
-       height: auto;
-   }
-
-    .contact-btn-menu{
-       position: absolute;
-       top: 100px;
-       left: 50%;
-   }
-    .contact-container{
-        
-        display: flex;
-       flex-direction: column;
-        height:auto;
-        width: 100%;
-        
-    }
-    .contact-container-hidden{
-        display: flex;
-       flex-direction: column;
+@media screen and (max-width: 800px) {
+    .container-container-contact {
         height: auto;
-        width: 100%;
     }
-   .button-contact-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-    .button-reseau-contact-div{
+
+    .contact-btn-menu {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+    }
+    
+    .contact-container-hidden {
         display: flex;
         flex-direction: column;
+        height: auto;
+        width: 90%;
+        padding: 40px;
+    }
+    .button-contact-div {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        
+    }
+    .button-contact {
+        width: 130px;
+        height: 60px;
+       padding: 10px;
+    }
+
+    .button-reseau-contact-div {
+        display: flex;
         align-items: center;
     }
-    .button-reseau-contact{
+    .button-reseau-contact {
         margin: 15px;
+        width: 70px;
+        height: 70px;
+    }
+    .button-reseau-contact a{
+       font-size:40px;
+       
     }
 }

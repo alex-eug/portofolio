@@ -78,6 +78,10 @@
         
         text-align: center;
     }
+    .list-item .link-item {
+        color:rgb(139, 139, 37)
+    }
+
     .link-item:hover{
         color: aliceblue;
         text-shadow:1px 1px 5px  black;

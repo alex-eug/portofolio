@@ -1,13 +1,14 @@
 .projects-container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: rgb(246, 60, 60);
     background: linear-gradient(63deg, rgba(246, 60, 60, 1) 0%, rgba(35, 35, 37, 0.973) 50%, rgba(42, 98, 205, 1) 100%);
+    position: absolute;
 }
 .black-page {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 
     z-index: 1000;
     animation: blackPage 3s .5s forwards;
@@ -26,7 +27,7 @@
 }
 
 .before-page{
-    max-height: 200vh;
+    max-height: 100%;
 }
 
 
@@ -41,7 +42,7 @@
 }
 .card-plate {
     width: 70vw;
-    height: 70vh;
+    height:100%;
     background: rgba(0, 0, 0, 0.425);
     display: inline;
     position: absolute;
