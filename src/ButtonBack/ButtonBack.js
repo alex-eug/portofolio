@@ -5,7 +5,7 @@ import backButton from './backButton.jpg'
 
 export default function ButtonBack() {
     return(
-       <div className="button-back-div"><Link  to="/"><img src={backButton} alt="" srcset="" /></Link></div>
+       <div className="button-back-div"><Link  to="/"><img src={backButton} alt="" /></Link></div>
         
     ) 
       

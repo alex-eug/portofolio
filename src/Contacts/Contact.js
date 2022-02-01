@@ -16,7 +16,6 @@ export default function Contact() {
         const redLight = document.querySelector('.button-contact-appear-inside')
         redLight.classList.toggle('button-contact-appear-inside-green')
        setLightUp(!lightUp)
-       console.log(lightUp);
     }
    
     return (
@@ -26,7 +25,7 @@ export default function Contact() {
 
        ( {lightUp &&
         <div className="contact-container contact-container-hidden">
-                <p className="contact-para">Vous pouvez me contacter par mail en suivant le lien ou par téléphone disponible sur mon cv en téléchargement</p>
+              
 
                 <div className='button-reseau-contact-div'>
                     <button className="button-reseau-contact "><a className='contact-linkedin ' href="https://www.linkedin.com/in/alexandre-eugene-toulouse/"><TiSocialLinkedinCircular /></a></button>

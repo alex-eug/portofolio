@@ -19,18 +19,18 @@ const titleRef = useRef()
 
     useEffect(() => {
        
-        gsap.fromTo(titleRef.current, { 'textShadow': '-5px -200px 9px rgb(156, 204, 247)' }, { 'textShadow': '-5px -2px 7px #f1ff11', duration: 2 });
+       
         
-         gsap.fromTo(titleRef.current, { color:'transparent','top': '0px', fontSize: '1rem',opacity:0 }, {color:'black','top': '200px', fontSize: '6.5rem',opacity:1, duration: 4.5 });
+         gsap.fromTo(titleRef.current, { color:'transparent','top': '0px', fontSize: '1rem',opacity:0 ,'textShadow': '-5px -200px 9px rgb(156, 204, 247)'}, {color:'black','top': '200px', fontSize: '6.5rem',opacity:1, 'textShadow': '-5px -2px 7px #f1ff11', duration: 2 });
        
 
-        gsap.fromTo(alexFoto.current, {top:'0px', 'right': '1000px',opacity:0 }, {  borderRadius: '50%', 'right': '0px',opacity:.9 ,duration: 2.5, delay: 1 });
-        gsap.to(alexFoto.current, {  duration: 2.5, delay: 1 });
+        gsap.fromTo(alexFoto.current, {top:'0px', 'right': '1000px',opacity:0 }, {  borderRadius: '50%', 'right': '0px',opacity:.9 ,duration: 2, delay: 1 });
+       
 
-        gsap.fromTo(chubiFoto.current, { top:'0px','left': '1000px',opacity:0  }, { borderRadius: '50%',  'left': '0px', opacity:.9,duration: 2.5, delay: 1 });
-        gsap.to(chubiFoto.current, { duration: 2.5, delay: 1 });
+        gsap.fromTo(chubiFoto.current, { top:'0px','left': '1000px',opacity:0  }, { borderRadius: '50%',  'left': '0px', opacity:.9,duration: 2, delay: 1 });
+       
 
-        gsap.fromTo(headerPara.current, {opacity:0,color:'transparent','textShadow': '-5px -200px 9px #f1ff11',fontSize: 0 }, {opacity:1,color:'black','textShadow': '-5px -2px 7px #f1ff11', fontSize: '1.5rem', duration: 1.5, delay: 1.5 });
+        gsap.fromTo(headerPara.current, {opacity:0,color:'transparent','textShadow': '-1px -200px 3px #f1ff11',fontSize: 0 }, {opacity:1,color:'black','textShadow': '1px 2px 3px #f1ff11', fontSize: '1.5rem' , duration: 2, delay: 1 });
 
     }, []);
 

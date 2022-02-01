@@ -26,8 +26,7 @@ export default function Presentation() {
    
     <section className="intro" ref={intro}>
         <p>
-          A long time ago, in a galaxy far,
-          <br /> far away....
+        Il y a bien longtemps, dans une galaxie lointaine, très lointaine....
         </p>
       </section>
       <section className="title" ref={title}>

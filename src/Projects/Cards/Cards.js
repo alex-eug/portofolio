@@ -12,7 +12,7 @@ const projectsElement = [
     {
         title:"KID'OZ'ANGES",
         img:koza,   
-        text:  "Kidozanges est une plateforme permettant à des parents de trouver des activités près de chez eux pour leurs enfants. Cette application participative permet également aux parents de soumettre les activités qu'ils connaissent afin d'enrichir le site. Conception de la partie front-end de l'application.",
+        text:  "Kidozanges est une plateforme permettant à des parents de trouver des activités près de chez eux pour leurs enfants. Cette application participative permet également aux parents de soumettre les activités qu'ils connaissent afin d'enrichir le site. SQL, Node, REACT.",
         gitUrl:"https://github.com/alex-eug/kid-oz-ange",
         siteUrl:"https://kidozanges.netlify.app/",
     },
@@ -27,7 +27,7 @@ const projectsElement = [
     {
         title:"2eme PORTFOLIO",
         img:secondPortfolio,   
-        text:  "Ceci est mon second portfolio réalisé en REACT  hdfghdfhdfhdfhdfh fdhdh dfh  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatum sit placeat, cumque dolorum mollitia quae fuga deleniti accusamus debitis?",
+        text:  "Portfolio réalisé en REACT, utilisation de l'api de context, GSAP",
         gitUrl:"https://github.com/alex-eug/portofolio",
         siteUrl:"https://portofolio-alex.netlify.app/",
     },
@@ -42,7 +42,7 @@ const projectsElement = [
 return (
     
     projectsElement.map((elmt,index)=>(
-    <div className="project-card-none">
+    <div key={index} className="project-card-none">
     <h1>{elmt.title}</h1>
     <p>{elmt.text}</p>
     <div className="lien-hypertext">

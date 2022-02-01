@@ -12,7 +12,7 @@ export default function NavBar() {
         setToggleMenu(!toggleMenu)
     }
 
-    const laserMenu = useRef()
+    
     const navList = useRef()
 
 useEffect(()=>{
@@ -30,7 +30,7 @@ useEffect(()=>{
 
     useEffect(() => {
         gsap.fromTo(navList.current, { 'fontSize': 0 }, {
-            fontSize: '1rem', delay: 2
+            fontSize: '1rem', delay: 1
         })
     },[]);
 
