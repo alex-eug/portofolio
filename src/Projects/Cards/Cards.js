@@ -2,8 +2,10 @@ import React from 'react';
 import './cards.css'
 import koza from './koza.png'
 import convertor from './converteur.png'
+import meteo from './meteo.png'
 import premierPortfolio from './premierPortofolio.png'
 import secondPortfolio from './secondPortofolio.png'
+
 import {AiFillGithub} from "react-icons/ai"
 import {ImLink} from "react-icons/im"
 export default function Cards() {
@@ -16,6 +18,16 @@ const projectsElement = [
         gitUrl:"https://github.com/alex-eug/kid-oz-ange",
         siteUrl:"https://kidozanges.netlify.app/",
     },
+
+    {
+        title:"Appli Meteo",
+        img:meteo,   
+        text:  "V1 d'une application méteo.",
+        gitUrl:"https://github.com/alex-eug/app-meteo",
+        siteUrl:"https://home-meteo.netlify.app/",
+    },
+
+
 
     {
         title:"CONVERTISSEUR",
