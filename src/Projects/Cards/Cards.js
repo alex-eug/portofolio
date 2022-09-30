@@ -1,5 +1,6 @@
 import React from 'react';
 import './cards.css'
+import myImc from './myimc.png'
 import koza from './koza.png'
 import convertor from './converteur.png'
 import meteo from './meteo.png'
@@ -11,6 +12,13 @@ import {ImLink} from "react-icons/im"
 export default function Cards() {
 
 const projectsElement = [
+    {
+        title:"MyImc",
+        img:myImc,   
+        text:  "Calculer et suivre son IMC, node.js pour le back et React en Front, une pincée de D3JS et MongoDb pour la BDD",
+        gitUrl:"https://github.com/alex-eug/imc-frontend",
+        siteUrl:"https://my-imcs.netlify.app/",
+    },
     {
         title:"KID'OZ'ANGES",
         img:koza,   
